@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            window.location.href = 'pagina-destino.html'; // Redireciona para a nova página
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form onsubmit="handleLogin(event)">
+            <input type="text" placeholder="Digite seu nome" required>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+</body>
+</html>
